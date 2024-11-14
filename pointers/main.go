@@ -10,11 +10,12 @@ type BigStruct struct {
 
 var obj BigStruct = BigStruct{}
 
-func funcPBV(obj BigStruct)  {}
 func funcPBP(obj *BigStruct) {}
+
+func funcPBV(obj BigStruct) {}
 
 func main() {
 	fmt.Println("Hello, World!")
-	funcPBV(obj)
+	funcPBP(&obj)
 	funcPBV(obj)
 }
