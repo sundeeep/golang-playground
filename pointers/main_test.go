@@ -1,5 +1,8 @@
 package main
 
+// Command to run the benchmarks by turning off go compiler optimization:
+// go test -bench=. -count 1 -gcflags=-N
+
 import (
 	"testing"
 )
